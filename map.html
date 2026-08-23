@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="de"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Reisekarte</title>
+<title data-t="0">Reisekarte</title>
 <style>/* required styles */
 
 .leaflet-pane,
@@ -690,67 +690,67 @@ svg.leaflet-image-layer.leaflet-interactive path {
 </style></head><body>
 <div id="karte"></div>
 <div id="pult">
- <h1>Reisekarte</h1>
- <p class="unter">Kurbelzonen und tragende Luft, allein aus Höhenmodell, Sonnenstand und
+ <h1 data-t="1">Reisekarte</h1>
+ <p class="unter" data-t="2">Kurbelzonen und tragende Luft, allein aus Höhenmodell, Sonnenstand und
  Luftraum gerechnet (Fundament v2) &ndash; jetzt für die ganzen Alpen bis ans Mittelmeer (43&ndash;48.5°&nbsp;N,
  5&ndash;17°&nbsp;O). Es ist immer genau eine Zeit gewählt.</p>
 
- <h2>Stunde (Junitag)</h2>
- <label><input type="radio" name="std" value="zeitlos" checked> zeitlos
+ <h2 data-t="3">Stunde (Junitag)</h2>
+ <label data-t="4"><input type="radio" name="std" value="zeitlos" checked> zeitlos
    <span style="color:#8a8a80">(rote Flecken, grüner Kern)</span></label>
- <label><input type="radio" name="std" value="10"> 10 Uhr</label>
- <label><input type="radio" name="std" value="13"> 13 Uhr</label>
- <label><input type="radio" name="std" value="17"> 17 Uhr</label>
- <p class="unter" style="margin:8px 0 0">Zur gewählten Stunde wird das Grün um alle
+ <label data-t="5"><input type="radio" name="std" value="10"> 10 Uhr</label>
+ <label data-t="6"><input type="radio" name="std" value="13"> 13 Uhr</label>
+ <label data-t="7"><input type="radio" name="std" value="17"> 17 Uhr</label>
+ <p class="unter" style="margin:8px 0 0" data-t="8">Zur gewählten Stunde wird das Grün um alle
  sonnenbeschienenen Flanken erweitert; die Deckkraft des Rots zeigt die gemessene
  Steigkraft der Stunde (Steigkurve: 10&nbsp;Uhr 1.32, 13&nbsp;Uhr 1.58,
  17&nbsp;Uhr 1.37&nbsp;m/s).</p>
 
- <h2>Ebenen</h2>
- <label><input type="checkbox" id="cbRot" checked>
+ <h2 data-t="9">Ebenen</h2>
+ <label data-t="10"><input type="checkbox" id="cbRot" checked>
    <span class="kbox" style="background:rgb(200,20,20)"></span>rote Flecken (Kurbelzonen, 93&nbsp;m)</label>
- <label><input type="checkbox" id="cbGruen" checked>
+ <label data-t="11"><input type="checkbox" id="cbGruen" checked>
    <span class="kbox" style="background:rgb(15,110,25)"></span>grüne Bänder (dunkel: Kern zeitlos, hell: Stunden-Band)</label>
- <label><input type="checkbox" id="cbWoelb">
+ <label data-t="12"><input type="checkbox" id="cbWoelb">
    <span class="kbox" style="background:rgb(212,140,40)"></span>Wölbung (zeitlose Geländegrösse)</label>
- <label><input type="checkbox" id="cbLuft">
+ <label data-t="13"><input type="checkbox" id="cbLuft">
    <span class="kbox" style="background:rgb(110,80,170)"></span>Lufträume: legale Decke
    <span style="color:#8a8a80;font-size:12px;display:block;margin-left:19px">
    dunkel &lt; 3000 m · mittel 3000–3500 m · hell 3500–4000 m · fast schwarz: unfliegbar
    (Boden über der Decke); Decke statisch — Militärräume sind an Wochenenden und abends
    oft inaktiv</span></label>
 
- <h2>Deckkraft</h2>
+ <h2 data-t="14">Deckkraft</h2>
  <input type="range" id="op" min="10" max="100" value="80">
 
- <h2>Grundkarte</h2>
- <label><input type="radio" name="basis" value="hell" checked> hell (Carto)</label>
- <label><input type="radio" name="basis" value="admin"> Landeskarte (geo.admin.ch / swisstopo)</label>
- <label><input type="radio" name="basis" value="sat"> Satellit (Esri World Imagery)</label>
+ <h2 data-t="15">Grundkarte</h2>
+ <label data-t="16"><input type="radio" name="basis" value="hell" checked> hell (Carto)</label>
+ <label data-t="17"><input type="radio" name="basis" value="admin"> Landeskarte (geo.admin.ch / swisstopo)</label>
+ <label data-t="18"><input type="radio" name="basis" value="sat"> Satellit (Esri World Imagery)</label>
 
  <details id="faiFold" style="margin-top:14px">
- <summary style="cursor:pointer;font-size:15px;font-weight:600">FAI-Dreiecke (Modell-Optimum, Junitag; alpenweit, Fundament v2)</summary>
+ <summary style="cursor:pointer;font-size:15px;font-weight:600" data-t="19">FAI-Dreiecke (Modell-Optimum, Junitag; alpenweit, Fundament v2)</summary>
  <div style="font-size:13px;color:#55554e;margin:6px 0 2px">Kategorie:</div>
- <label><input type="radio" name="faistart" value="frei_ch" checked> frei (Route berührt die Schweiz &ndash; xcontest-CH-Wertung)</label>
- <label><input type="radio" name="faistart" value="Riederalp"> Riederalp</label>
- <label><input type="radio" name="faistart" value="Niesen"> Niesen</label>
- <label><input type="radio" name="faistart" value="Marbachegg"> Marbachegg</label>
- <label><input type="radio" name="faistart" value="Fanas"> Fanas</label>
+ <label data-t="20"><input type="radio" name="faistart" value="frei_ch" checked> frei (Route berührt die Schweiz &ndash; xcontest-CH-Wertung)</label>
+ <label data-t="21"><input type="radio" name="faistart" value="Riederalp"> Riederalp</label>
+ <label data-t="22"><input type="radio" name="faistart" value="Niesen"> Niesen</label>
+ <label data-t="23"><input type="radio" name="faistart" value="Marbachegg"> Marbachegg</label>
+ <label data-t="24"><input type="radio" name="faistart" value="Fanas"> Fanas</label>
  <div style="font-size:13px;color:#55554e;margin:8px 0 2px">Grösse:</div>
- <label><input type="radio" name="fai" value="" checked> keines</label>
- <label><input type="radio" name="fai" value="200"> 200 km</label>
- <label><input type="radio" name="fai" value="225"> 225 km</label>
- <label><input type="radio" name="fai" value="250"> 250 km</label>
- <label><input type="radio" name="fai" value="275"> 275 km</label>
- <label><input type="radio" name="fai" value="300"> 300 km</label>
- <label><input type="radio" name="fai" value="325"> 325 km</label>
- <label><input type="radio" name="fai" value="350"> 350 km</label>
- <label><input type="radio" name="fai" value="375"> 375 km</label>
+ <label data-t="25"><input type="radio" name="fai" value="" checked> keines</label>
+ <label data-t="26"><input type="radio" name="fai" value="200"> 200 km</label>
+ <label data-t="27"><input type="radio" name="fai" value="225"> 225 km</label>
+ <label data-t="28"><input type="radio" name="fai" value="250"> 250 km</label>
+ <label data-t="29"><input type="radio" name="fai" value="275"> 275 km</label>
+ <label data-t="30"><input type="radio" name="fai" value="300"> 300 km</label>
+ <label data-t="31"><input type="radio" name="fai" value="325"> 325 km</label>
+ <label data-t="32"><input type="radio" name="fai" value="350"> 350 km</label>
+ <label data-t="33"><input type="radio" name="fai" value="375"> 375 km</label>
  <div id="faiInfo" style="font-size:13px;color:#3a3a35;background:#f7f7f4;border-radius:9px;padding:10px 12px;line-height:1.7;margin-top:8px;display:none"></div>
  <div id="faiRang" style="font-size:13px;color:#3a3a35;background:#f7f7f4;border-radius:9px;padding:10px 12px;line-height:1.7;margin-top:8px;display:none"></div>
 </details>
 
- <p class="fuss">Rote Flecken: Wölbung × Steilheit auf dem 93-m-Raster, Flächen-Eichung
+ <p class="fuss" data-t="34">Rote Flecken: Wölbung × Steilheit auf dem 93-m-Raster, Flächen-Eichung
  11.5 % im CH-Fenster, keine kk7-Orte. Grüner Kern: tief + grosse Wand + gewölbt (zeitlos).
  Stunden-Band: sonnenbeschienene grosse Flanken (astronomisch, Junitag). Luftdecke aus dem
  Luftraum-Katalog (statisch). Alles aus den v2-Skriptketten des Papers. Projekt
@@ -856,4 +856,68 @@ function faiZeige(){
 document.querySelectorAll('input[name=fai]').forEach(function(r){r.onchange=faiZeige;});
 document.querySelectorAll('input[name=faistart]').forEach(function(r){r.onchange=faiZeige;});
 zeige();
-</script></body></html>
+</script>
+<style>
+#sprachwahl{position:fixed;top:12px;right:14px;z-index:9999;font:600 13px/1.2
+ system-ui,sans-serif;background:#fff;border:1px solid #ccc;border-radius:16px;
+ padding:2px;box-shadow:0 1px 4px rgba(0,0,0,.15)}
+#sprachwahl button{border:0;background:none;padding:5px 11px;border-radius:14px;
+ cursor:pointer;color:#555;font:inherit}
+#sprachwahl button[aria-pressed="true"]{background:#2a78d6;color:#fff}
+@media print{#sprachwahl{display:none}}
+</style>
+<div id="sprachwahl" role="group" aria-label="Sprache / Language">
+<button data-s="de" aria-pressed="true">DE</button><button data-s="en"
+ aria-pressed="false">EN</button></div>
+<script>
+(function(){
+ var EN = {"0": "Travel map", "1": "Travel map", "2": "Circling zones and carrying air, computed from the elevation model, the position of the sun and the airspace alone (foundation v2) &ndash; now for the whole Alps down to the Mediterranean (43&ndash;48.5&deg;&nbsp;N, 5&ndash;17&deg;&nbsp;E). Exactly one time is selected at any moment.", "3": "Hour (a June day)", "4": "<input type=\"radio\" name=\"std\" value=\"zeitlos\" checked> time-independent\n   <span style=\"color:#8a8a80\">(red patches, green core)</span>", "5": "<input type=\"radio\" name=\"std\" value=\"10\"> 10:00", "6": "<input type=\"radio\" name=\"std\" value=\"13\"> 13:00", "7": "<input type=\"radio\" name=\"std\" value=\"17\"> 17:00", "8": "For the selected hour the green is extended to every sun-lit flank; the opacity of the red shows the measured climb strength of that hour (climb curve: 10:00 1.32, 13:00 1.58, 17:00 1.37&nbsp;m/s).", "9": "Layers", "10": "<input type=\"checkbox\" id=\"cbRot\" checked>\n   <span class=\"kbox\" style=\"background:rgb(200,20,20)\"></span>red patches (circling zones, 93&nbsp;m)", "11": "<input type=\"checkbox\" id=\"cbGruen\" checked>\n   <span class=\"kbox\" style=\"background:rgb(15,110,25)\"></span>green bands (dark: time-independent core, light: hourly band)", "12": "<input type=\"checkbox\" id=\"cbWoelb\">\n   <span class=\"kbox\" style=\"background:rgb(212,140,40)\"></span>convexity (time-independent terrain quantity)", "13": "<input type=\"checkbox\" id=\"cbLuft\">\n   <span class=\"kbox\" style=\"background:rgb(110,80,170)\"></span>airspace: legal ceiling\n   <span style=\"color:#8a8a80;font-size:12px;display:block;margin-left:19px\">\n   dark &lt; 3000 m &middot; medium 3000&ndash;3500 m &middot; light 3500&ndash;4000 m &middot; almost black: unflyable\n   (ground above the ceiling); ceiling is static &mdash; military areas are often inactive at\n   weekends and in the evening</span>", "14": "Opacity", "15": "Base map", "16": "<input type=\"radio\" name=\"basis\" value=\"hell\" checked> light (Carto)", "17": "<input type=\"radio\" name=\"basis\" value=\"admin\"> Swiss topo map (geo.admin.ch / swisstopo)", "18": "<input type=\"radio\" name=\"basis\" value=\"sat\"> satellite (Esri World Imagery)", "19": "FAI triangles (model optimum, a June day; Alps-wide, foundation v2)", "20": "<input type=\"radio\" name=\"faistart\" value=\"frei_ch\" checked> free (route touches Switzerland &ndash; XContest CH scoring)", "21": "<input type=\"radio\" name=\"faistart\" value=\"Riederalp\"> Riederalp", "22": "<input type=\"radio\" name=\"faistart\" value=\"Niesen\"> Niesen", "23": "<input type=\"radio\" name=\"faistart\" value=\"Marbachegg\"> Marbachegg", "24": "<input type=\"radio\" name=\"faistart\" value=\"Fanas\"> Fanas", "25": "<input type=\"radio\" name=\"fai\" value=\"\" checked> none", "26": "<input type=\"radio\" name=\"fai\" value=\"200\"> 200 km", "27": "<input type=\"radio\" name=\"fai\" value=\"225\"> 225 km", "28": "<input type=\"radio\" name=\"fai\" value=\"250\"> 250 km", "29": "<input type=\"radio\" name=\"fai\" value=\"275\"> 275 km", "30": "<input type=\"radio\" name=\"fai\" value=\"300\"> 300 km", "31": "<input type=\"radio\" name=\"fai\" value=\"325\"> 325 km", "32": "<input type=\"radio\" name=\"fai\" value=\"350\"> 350 km", "33": "<input type=\"radio\" name=\"fai\" value=\"375\"> 375 km", "34": "Red patches: convexity &times; steepness on the 93&nbsp;m grid, area calibration 11.5 % inside the Swiss window, no kk7 locations used. Green core: low + large face + convex (time-independent). Hourly band: sun-lit large flanks (astronomical, a June day). Air ceiling from the airspace catalogue (static). All from the v2 script chains of the paper. Project dykstra-flights."};
+ var de = {}, gesetzt = false;
+ function texte(w){                       // alle Textknoten in Reihenfolge
+  var a = [], g = document.createTreeWalker(w, NodeFilter.SHOW_TEXT, null);
+  var n; while((n = g.nextNode())) a.push(n);
+  return a;
+ }
+ function schreibe(e, html){
+  // Bedienelemente (Schalter, Felder) duerfen nicht neu gebaut werden, sonst
+  // verlieren sie ihre Ereignisse. Darum nur die Textknoten austauschen,
+  // solange die Struktur beider Fassungen uebereinstimmt.
+  if(e.querySelector('input,select,textarea,canvas,svg,iframe,img')){
+   var t = document.createElement('div'); t.innerHTML = html;
+   var a = texte(e), b = texte(t);
+   if(a.length === b.length){
+    for(var i = 0; i < a.length; i++) a[i].nodeValue = b[i].nodeValue;
+    return;
+   }
+  }
+  e.innerHTML = html;
+ }
+ function setze(s){
+  document.querySelectorAll('[data-t]').forEach(function(e){
+   var k = e.getAttribute('data-t');
+   if(!gesetzt) de[k] = e.innerHTML;
+   if(s === 'en' && EN[k]) schreibe(e, EN[k]);
+   else if(de[k] !== undefined) schreibe(e, de[k]);
+  });
+  document.querySelectorAll('img[data-bild-en]').forEach(function(e){
+   if(!e.dataset.bildDe) e.dataset.bildDe = e.getAttribute('src');
+   e.setAttribute('src', s === 'en' ? e.getAttribute('data-bild-en')
+                                    : e.dataset.bildDe);
+  });
+  gesetzt = true;
+  document.documentElement.lang = s;
+  document.querySelectorAll('#sprachwahl button').forEach(function(b){
+   b.setAttribute('aria-pressed', b.dataset.s === s ? 'true' : 'false');
+  });
+  try{ localStorage.setItem('sprache', s); }catch(e){}
+ }
+ document.querySelectorAll('#sprachwahl button').forEach(function(b){
+  b.addEventListener('click', function(){ setze(b.dataset.s); });
+ });
+ var w = null;
+ try{ w = localStorage.getItem('sprache'); }catch(e){}
+ if(!w) w = (navigator.language||'').slice(0,2) === 'de' ? 'de' : 'en';
+ setze(w);
+})();
+</script>
+</body></html>
