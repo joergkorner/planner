@@ -380,18 +380,6 @@ cat part*.txt | xz -6 &gt; states.txt.xz
 <p>Each line is independent, so the output can be processed line by line without
 loading the file.</p>
 <hr />
-<h2>If reconstructability is a concern</h2>
-<p>The line above <strong>is</strong> a flight: 23 m in height, 94 m in position. If that is
-more than should leave a server, the same segmenter can write a form from which
-no flight can be reassembled: each segment on its own row, without a flight
-identifier and without order, position on a grid, time in ten-minute slots.</p>
-<pre><code>L,4605,786,87,4,-5,80
-kind · position · ten-minute slot · duration · gain · height
-</code></pre>
-<p>Sorted by position, that is <strong>5.8 bytes per segment</strong> — smaller still — and it
-supports every map one would want to draw, while giving away less than a climb
-database with flight identifiers does today.</p>
-<hr />
 <h2>Files</h2>
 <table>
 <th>
@@ -424,6 +412,10 @@ database with flight identifiers does today.</p>
 <tr>
 <td><code>example_day.png</code>, <code>example_verify.png</code></td>
 <td>the two pictures above</td>
+</tr>
+<tr>
+<td><code>README.md</code>, <code>readme.html</code></td>
+<td>this text — as source and as a page to open</td>
 </tr>
 </tbody>
 </table>
