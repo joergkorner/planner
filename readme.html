@@ -63,9 +63,23 @@ no weather, no network.</p>
 <p>Removing the glider's own sink from the vario needs a sink polar per glider
 type. Run 1 measures it; you can inspect the result before run 2 touches
 anything.</p>
-<pre><code class="language-bash">python3 polarmaker.py &quot;flights/**/*.IGC&quot; --out polars.csv --min 50
+<pre><code class="language-bash">pip install numpy pandas scipy
+python3 polarmaker.py &quot;flights/**/*.IGC&quot; --out polars.csv --min 50
 python3 flightstates.py --delta &quot;flights/**/*.IGC&quot; &gt; states.txt
 </code></pre>
+<p>What the pieces mean:</p>
+<ul>
+<li><code>"flights/**/*.IGC"</code> — replace <code>flights</code> with the folder holding your IGC
+  files; <code>**</code> searches all subfolders. The quotes are required (the script
+  expands the pattern itself; case of <code>.igc</code> doesn't matter). Several
+  patterns may be given. Duplicate file names are processed once.</li>
+<li><code>--out polars.csv</code> — where run 1 writes its table.</li>
+<li><code>--min 50</code> — a glider type gets its own row only with at least 50 flights.</li>
+<li><code>--delta</code> — compact numbers (recommended); without it, plain numbers.</li>
+<li><code>&gt; states.txt</code> — run 2 prints to standard output; <code>&gt;</code> puts it in a file.</li>
+<li><code>--polars FILE</code> (run 2) — which table to use; default: <code>polars.csv</code> next
+  to the script. <code>--id TEXT</code> — what to write in the first field (default <code>P</code>).</li>
+</ul>
 <p><code>polars.csv</code> is one small table: per glider type, own sink at 25–65 km/h,
 measured as the mode of the vario per band (the most common air on a glide is
 near-still air). <strong>No positions, no times, no pilots</strong> — every line readable
